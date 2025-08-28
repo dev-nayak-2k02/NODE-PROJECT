@@ -3,3 +3,9 @@ function abcd(){
     console.log('ggk');
 }
 abcd();
+
+//fnc expression
+let character = function (){
+    console.log('it is generated');
+};
+character();
