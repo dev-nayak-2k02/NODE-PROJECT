@@ -16,3 +16,4 @@ let res = (function(){
     return console.log('created and destroyed!!');
 });
 res();
+
