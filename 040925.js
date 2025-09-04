@@ -1,7 +1,14 @@
-let onePlus = function (nums){
-    nums[nums.length-1] += 1;
-    console.log(nums);
-}
+// interactiveProgram.js
+const readline = require('readline');
 
-let nums = [1,2,3];
-onePlus(nums);
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Enter a number: ', (input) => {
+    const a = Number(input);
+    rl.close();
+});
+
+console.log(a);
