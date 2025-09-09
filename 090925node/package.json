@@ -1,0 +1,13 @@
+
+{
+  "name": "090925node",
+  "version": "1.0.0",
+  "description": "creating arithmetic operation",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dev prasanna nayak",
+  "license": "ISC"
+}
