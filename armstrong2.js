@@ -1,4 +1,4 @@
-let checkArmstrong = (n)=> {
+function checkArmstrong (n){
     let sum = 0;
     const countDigits = (n)=>{
         let count = 0;
@@ -35,4 +35,4 @@ let checkArmstrong = (n)=> {
     }
 }
 
-let ans = checkArmstrong(10);
+checkArmstrong(10);
