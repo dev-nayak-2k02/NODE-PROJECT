@@ -7,4 +7,4 @@ const countDigits = (n)=>{
     }
     return count;
 }
-export default countDigits
+export default countDigits;
