@@ -1,13 +1,10 @@
 const express = require('express')
-const { homeController, aboutController, productController, searchController } = require('./controller')
-const app = express()
+const app = express() 
 
-app.get('/', homeController)
-app.get('/about', aboutController)
-app.get('/product', productController)
-app.get('/search/:id', searchController)
+app.use("/api/v1",require("./routes"))
 
 const PORT = 8000
+
 app.listen(PORT, ()=>{
-    console.log(`server is running at PORT: ${PORT}`);
+    console.log(`server is running at PORT: ${PORT}`)
 })
