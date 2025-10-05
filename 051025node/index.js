@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.post('/search/:id',(req,res)=>{
-    console.log(req.id)
+    console.log(req.params.id)
     res.send('something happened')
 })
 
