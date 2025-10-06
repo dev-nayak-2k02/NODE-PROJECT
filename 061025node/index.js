@@ -25,7 +25,11 @@ app.get('/about',(req, res)=>{
             "price": "30,000"
         }
     ]
-    res.send(product)
+    res.send({
+        message: "Fetched data",
+        success: true,
+        content: product
+    })
     console.log(product);
 })
 
