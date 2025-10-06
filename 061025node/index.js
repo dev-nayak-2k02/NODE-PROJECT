@@ -1,37 +1,12 @@
 const express = require('express')
+const { homeController, registerController, aboutController } = require('./controller')
 const app = express()
 
-app.get('/about',(req, res)=>{
-    const product = [
-        {
-            "name": "Iphone 17 Pro(12GB RAM, 256GB Storage)",
-            "brand": "Apple",
-            "color": "Punk Orange",
-            "processor": "A-19 Bionic chip",
-            "price": '1,30,000'
-        },
-        {
-            "name": "Galaxy S25 Pro-max(12GB RAM, 256GB Storage)",
-            "brand": "Samsung",
-            "color": "Space Grey",
-            "processor": "Snapdragon-8 Elite",
-            "price": '1,17,000'
-        },
-        {
-            "name": "IQOO Neo 10(8GB RAM, 256GB Storage)",
-            "brand": "IQOO(Vivo)",
-            "color": "Platinum Chrome",
-            "processor": "Snapdragon-8s Gen 4",
-            "price": "30,000"
-        }
-    ]
-    res.json({
-        message: "Fetched data",
-        success: true,
-        content: product
-    })
-    console.log(req.query);
-})
+app.get('/',homeController)
+
+app.get('/register',registerController)
+
+app.get('/about/:id',aboutController)
 
 const PORT = 8000;
 
