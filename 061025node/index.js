@@ -25,12 +25,12 @@ app.get('/about',(req, res)=>{
             "price": "30,000"
         }
     ]
-    res.send({
+    res.json({
         message: "Fetched data",
         success: true,
         content: product
     })
-    console.log(req.query.name);
+    console.log(req.query);
 })
 
 const PORT = 8000;
