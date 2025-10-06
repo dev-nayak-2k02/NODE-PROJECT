@@ -30,7 +30,7 @@ app.get('/about',(req, res)=>{
         success: true,
         content: product
     })
-    console.log(product);
+    console.log(req.query.name);
 })
 
 const PORT = 8000;
