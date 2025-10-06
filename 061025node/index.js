@@ -6,7 +6,7 @@ app.get('/',homeController)
 
 app.get('/register',registerController)
 
-app.get('/about/:id',aboutController)
+app.get('/about/:name',aboutController)
 
 const PORT = 8000;
 
