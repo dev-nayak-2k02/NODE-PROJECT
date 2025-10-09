@@ -38,7 +38,7 @@ export function aboutController(req, res){
     const answer = product.find((product)=>product.name === req.params.name);
     console.log(req.params);
     if(answer){
-        console.log(answer)
+        console.log(answer);
     } else {
         console.error(answer);
     }
